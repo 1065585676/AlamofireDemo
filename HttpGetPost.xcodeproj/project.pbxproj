@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D8B7C9FD4FCD1D3E265A1E1 /* Pods_HttpGetPost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E680DBA6461C5D596E6EA2D /* Pods_HttpGetPost.framework */; };
 		FC939C431DB4CE0E0063F259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC939C421DB4CE0E0063F259 /* AppDelegate.swift */; };
 		FC939C451DB4CE0E0063F259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC939C441DB4CE0E0063F259 /* ViewController.swift */; };
-		FC939C481DB4CE0E0063F259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC939C461DB4CE0E0063F259 /* Main.storyboard */; };
 		FC939C4A1DB4CE0E0063F259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC939C491DB4CE0E0063F259 /* Assets.xcassets */; };
 		FC939C4D1DB4CE0E0063F259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC939C4B1DB4CE0E0063F259 /* LaunchScreen.storyboard */; };
+		FC939C551DB4CEA70063F259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC939C541DB4CEA70063F259 /* Main.storyboard */; };
+		FCFDC5881DB706EC008B2F6A /* AlamofireRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFDC5871DB706EC008B2F6A /* AlamofireRequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		159A73DEB43577EE3FB39E35 /* Pods-HttpGetPost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HttpGetPost.release.xcconfig"; path = "Pods/Target Support Files/Pods-HttpGetPost/Pods-HttpGetPost.release.xcconfig"; sourceTree = "<group>"; };
+		8E680DBA6461C5D596E6EA2D /* Pods_HttpGetPost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HttpGetPost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA735B3E4451092F95D38FB /* Pods-HttpGetPost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HttpGetPost.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HttpGetPost/Pods-HttpGetPost.debug.xcconfig"; sourceTree = "<group>"; };
 		FC939C3F1DB4CE0E0063F259 /* HttpGetPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HttpGetPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC939C421DB4CE0E0063F259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC939C441DB4CE0E0063F259 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FC939C471DB4CE0E0063F259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC939C491DB4CE0E0063F259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC939C4C1DB4CE0E0063F259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC939C4E1DB4CE0E0063F259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC939C541DB4CEA70063F259 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FCFDC5871DB706EC008B2F6A /* AlamofireRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8B7C9FD4FCD1D3E265A1E1 /* Pods_HttpGetPost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2887BD032C361D27A358ACEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E680DBA6461C5D596E6EA2D /* Pods_HttpGetPost.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51F4CACC321121DB25FFEA9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABA735B3E4451092F95D38FB /* Pods-HttpGetPost.debug.xcconfig */,
+				159A73DEB43577EE3FB39E35 /* Pods-HttpGetPost.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC939C361DB4CE0E0063F259 = {
 			isa = PBXGroup;
 			children = (
 				FC939C411DB4CE0E0063F259 /* HttpGetPost */,
 				FC939C401DB4CE0E0063F259 /* Products */,
+				51F4CACC321121DB25FFEA9D /* Pods */,
+				2887BD032C361D27A358ACEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,7 +82,8 @@
 			children = (
 				FC939C421DB4CE0E0063F259 /* AppDelegate.swift */,
 				FC939C441DB4CE0E0063F259 /* ViewController.swift */,
-				FC939C461DB4CE0E0063F259 /* Main.storyboard */,
+				FC939C541DB4CEA70063F259 /* Main.storyboard */,
+				FCFDC5871DB706EC008B2F6A /* AlamofireRequestViewController.swift */,
 				FC939C491DB4CE0E0063F259 /* Assets.xcassets */,
 				FC939C4B1DB4CE0E0063F259 /* LaunchScreen.storyboard */,
 				FC939C4E1DB4CE0E0063F259 /* Info.plist */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC939C511DB4CE0E0063F259 /* Build configuration list for PBXNativeTarget "HttpGetPost" */;
 			buildPhases = (
+				C8083BF0424BFFEACFCD8DF3 /* [CP] Check Pods Manifest.lock */,
 				FC939C3B1DB4CE0E0063F259 /* Sources */,
 				FC939C3C1DB4CE0E0063F259 /* Frameworks */,
 				FC939C3D1DB4CE0E0063F259 /* Resources */,
+				2C7069755C42369C379D7045 /* [CP] Embed Pods Frameworks */,
+				B5235E088A38952CB37E83EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,13 +154,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC939C551DB4CEA70063F259 /* Main.storyboard in Resources */,
 				FC939C4D1DB4CE0E0063F259 /* LaunchScreen.storyboard in Resources */,
 				FC939C4A1DB4CE0E0063F259 /* Assets.xcassets in Resources */,
-				FC939C481DB4CE0E0063F259 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C7069755C42369C379D7045 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HttpGetPost/Pods-HttpGetPost-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5235E088A38952CB37E83EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HttpGetPost/Pods-HttpGetPost-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8083BF0424BFFEACFCD8DF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC939C3B1DB4CE0E0063F259 /* Sources */ = {
@@ -138,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC939C451DB4CE0E0063F259 /* ViewController.swift in Sources */,
+				FCFDC5881DB706EC008B2F6A /* AlamofireRequestViewController.swift in Sources */,
 				FC939C431DB4CE0E0063F259 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,14 +224,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FC939C461DB4CE0E0063F259 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC939C471DB4CE0E0063F259 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FC939C4B1DB4CE0E0063F259 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -182,6 +253,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +303,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -257,7 +330,9 @@
 		};
 		FC939C521DB4CE0E0063F259 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABA735B3E4451092F95D38FB /* Pods-HttpGetPost.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 624877M2V4;
 				INFOPLIST_FILE = HttpGetPost/Info.plist;
@@ -270,7 +345,9 @@
 		};
 		FC939C531DB4CE0E0063F259 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 159A73DEB43577EE3FB39E35 /* Pods-HttpGetPost.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 624877M2V4;
 				INFOPLIST_FILE = HttpGetPost/Info.plist;
@@ -300,6 +377,7 @@
 				FC939C531DB4CE0E0063F259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
